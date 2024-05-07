@@ -18,9 +18,9 @@ const SignIn = () => {
           <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">
             Log in to Aora
           </Text>
-          {/* <FormField
+          <FormField
           title="Email"
-          /> */}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

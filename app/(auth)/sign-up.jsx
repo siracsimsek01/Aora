@@ -29,7 +29,7 @@ const SignUp = () => {
       const result = await createUser(form.email, form.password, form.username);
 
       // set it to global state
-      router.replace('/home')
+      router.replace('/')
 
     } catch (error) {
       Alert.alert('Error', error.message);
@@ -64,7 +64,7 @@ const SignUp = () => {
             title="Email"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })}
-            otherStyles="mt-5"
+            otherStyles="mt-5 lowercase"
             keyboardType="email-address"
           />
 
